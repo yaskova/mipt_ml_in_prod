@@ -26,20 +26,11 @@ def plot_error_distribution():
                     sns.histplot(
                         df["absolute_error"], 
                         bins=20, 
-                        kde=False, 
-                        color="skyblue", 
-                        edgecolor="black", 
+                        kde=True, 
                         label="Гистограмма"
                     )
 
-                    # Добавление линии распределения
-                    sns.kdeplot(
-                        data= df, 
-                        x = "absolute_error", 
-                        color="red", 
-                        linewidth=2, 
-                        label="Линия распределения"
-                    )
+
                     plt.title("Распределение абсолютных ошибок", fontsize=16)
                     plt.xlabel("Абсолютная ошибка", fontsize=12)
                     plt.ylabel("Частота", fontsize=12)
