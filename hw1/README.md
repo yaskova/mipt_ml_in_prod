@@ -14,4 +14,4 @@
 
 На основе metric_log.csv с помощью сервиса plot строится график распределения (гистограмма) абсолютных ошибок. График записывается в файл logs/error_distribution.png.
 
-
+![ae-hist](./logs/error_distribution.png)
