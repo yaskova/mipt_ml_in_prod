@@ -19,7 +19,7 @@ try:
  
     # Создаём функцию callback для обработки данных из очереди
     def callback(ch, method, properties, body):
-        print(f'Получено сообщение с  вектор признаков {body}')
+        print(f'Получено сообщение с  вектором признаков {body}')
         message = json.loads(body)
         message_id = message['id']
         features = message['body']
